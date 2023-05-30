@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Matheus Boaventura</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div clas="root-container">
+      <div class="content-container">
+        <section class="section-hero">
+          <div class="barra-navegacao">
+            <h2 class="titulo-navegacao">Matheus Boaventura</h2>
+            <div>
+              <a
+                onclick="onClickScrollTo('section-ability')"
+                class="links-navegacao"
+                >Habilidades</a
+              >
+              <a
+                onclick="onClickScrollTo('section-portifolio')"
+                class="links-navegacao"
+                >Portfólio</a
+              >
+              <a
+                onclick="onClickScrollTo('section-experiencias')"
+                class="links-navegacao"
+                >Experiências</a
+              >
+            </div>
+            <button onclick="onClickScrollTo('section-contato')">
+              CONTATO
+            </button>
+          </div>
+          <div class="hero-info">
+            <div class="hero-info-text-container">
+              <h1>
+                Olá, Muito prazer! <br />
+                Sou o Matheus Boaventura
+              </h1>
+              <p class="hero-info-subtitle">
+                Estudante de pragamação desde 2022, com foco em entrar no
+                mercado de trabalho.
+              </p>
+              <button onclick="onClickScrollTo('section-contato')">
+                ENTRAR EM CONTATO
+              </button>
+              <div class="hero-info-icons-container">
+                <a
+                  onclick="onClickLink('https://github.com/Matheus-Boaventura')"
+                >
+                  <img
+                    alt="Github"
+                    class="hero-info-icons-img"
+                    src="icones/github.png"
+                  />
+                </a>
+                <a
+                  onclick="onClickLink('https://www.linkedin.com/in/matheus-boaventura-722504226/')"
+                >
+                  <img
+                    alt="Linkedin"
+                    class="hero-info-icons-img"
+                    src="icones/linkedin.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div>
+              <img
+                class="hero-info-image"
+                src="imagem.png"
+                alt="Perfil Matheus Boaventura"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="section-ability" id="section-ability">
+          <h2>Habilidades</h2>
+          <h2 class="verde">que domino.</h2>
+          <div class="ability-cards-container">
+            <div class="ability-card">
+              <div class="ability-cards-icon-container">
+                <img
+                  class="ability-card-icon-img"
+                  src="icones/gerais.png"
+                  alt="Habilidades Gerais"
+                />
+              </div>
+              <h5>Habilidades Gerais</h5>
+              <p class="card">
+                Tecnologias que utilizo no dia a dia da programação.
+              </p>
+              <ul class="ability-list">
+                <li>GIT</li>
+                <li>Github</li>
+                <li>VSCode</li>
+              </ul>
+            </div>
+
+            <div class="ability-card">
+              <div class="ability-cards-icon-container">
+                <img
+                  class="ability-card-icon-img"
+                  src="icones/Front.png"
+                  alt="Front End"
+                />
+              </div>
+              <h5>Front-End</h5>
+              <p class="card">
+                Ferramentas utilizadas para criação de sistemas web
+              </p>
+              <ul class="ability-list">
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <div class="ability-card">
+              <div class="ability-cards-icon-container">
+                <img
+                  class="ability-card-icon-img"
+                  src="icones/back.png"
+                  alt="Back End"
+                />
+              </div>
+              <h5>Back-End</h5>
+              <p class="card">Controle de banco de dados e aplições na nuvem</p>
+              <ul class="ability-list">
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>Postgres</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section-portifolio" id="section-portifolio">
+          <h2>Portfólio</h2>
+          <h2 class="verde">de projetos.</h2>
+          <div class="section-portifolio-grid">
+            <div class="section-portifolio-card">
+              <img
+                class="section-portifolio-img"
+                src="Portifolio/supermercado.png"
+                alt="Supermercado"
+              />
+              <h5>Lista de Supermercado</h5>
+              <p class="card">Aplicação em React.js e Express+MongoDB</p>
+              <div class="section-portifolio-card-links">
+                <a>
+                  <img
+                    class="section-portifolio-card-icon-image"
+                    src="icones/Vector.png"
+                    alt="Link do Projeto"
+                  />
+                </a>
+                <a>
+                  <img
+                    class="section-portifolio-card-icon-image"
+                    src="icones/github.png"
+                    alt="Github do Projeto"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="section-portifolio-card">
+              <img
+                class="section-portifolio-img"
+                src="Portifolio/Livraria.png"
+                alt="Livraria"
+              />
+              <h5>Livraria</h5>
+              <p class="card">Aplicação em React.js e Express + Sequelize</p>
+              <div class="section-portifolio-card-links">
+                <a>
+                  <img
+                    class="section-portifolio-card-icon-image"
+                    src="icones/Vector.png"
+                    alt="Link do Projeto"
+                  />
+                </a>
+                <a>
+                  <img
+                    class="section-portifolio-card-icon-image"
+                    src="icones/github.png"
+                    alt="Github do Projeto"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="section-portifolio-card">
+              <img
+                class="section-portifolio-img"
+                src="Portifolio/Rectangle (2).png"
+                alt="Supermercado2"
+              />
+              <h5>Lista de Supermercado</h5>
+              <p class="card">Aplicação em React.js e Express+MongoDB</p>
+              <div class="section-portifolio-card-links">
+                <a>
+                  <img
+                    class="section-portifolio-card-icon-image"
+                    src="icones/Vector.png"
+                    alt="Link do Projeto"
+                  />
+                </a>
+                <a>
+                  <img
+                    class="section-portifolio-card-icon-image"
+                    src="icones/github.png"
+                    alt="Github do Projeto"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-experiencias" id="section-experiencias">
+          <h2>Experiências</h2>
+          <h2 class="verde">profiossionais.</h2>
+          <div class="section-experiencias-card">
+            <img class="section-experiencias-card-img" src="Icones/gam.png" />
+            <div class="section-experiencias-card-subtitle">
+              <h6 class="section-experiencias-card-title">Estagiário</h6>
+              <p class="section-experiencias-card-subtitle">
+                GAM - Distribuidora de remédios e itens de perfumaria
+              </p>
+              <p class="section-experiencias-card-text">
+                Responsável por cadastrar novos itens no sistema, inativação de
+                itens com baixa rotatividade, suporte para compradores e
+                vendedores
+              </p>
+            </div>
+          </div>
+          <div class="section-experiencias-card">
+            <img class="section-experiencias-card-img" src="Icones/lumie.png" />
+            <div class="section-experiencias-card-subtitle">
+              <h6 class="section-experiencias-card-title">Projetista</h6>
+              <p class="section-experiencias-card-subtitle">
+                Lumie Solar Soluções Fotovoltaicas
+              </p>
+              <p class="section-experiencias-card-text">
+                Responsável por fazer o acompanhamento comercial, Prospecção de
+                novos clientes,Acompanhamento de projetos fotovoltaicos, Suporte
+                Técnico, Elaborador de projetos fotovoltaicos e Comercialização
+                de sistemas fotovoltaicos.
+              </p>
+            </div>
+          </div>
+          <div class="section-experiencias-card">
+            <img class="section-experiencias-card-img" src="Icones/way2.png" />
+            <div class="section-experiencias-card-subtitle">
+              <h6 class="section-experiencias-card-title">
+                Executivo de Novos Negocios
+              </h6>
+              <p class="section-experiencias-card-subtitle">Way2 Technology</p>
+              <p class="section-experiencias-card-text">
+                Responsável por desenvolver relacionamento com novos clientes.
+              </p>
+            </div>
+          </div>
+          <div class="section-experiencias-card">
+            <img
+              class="section-experiencias-card-img"
+              src="Icones/wicomm.png"
+            />
+            <div class="section-experiencias-card-subtitle">
+              <h6 class="section-experiencias-card-title">
+                Executivo de Contas
+              </h6>
+              <p class="section-experiencias-card-subtitle">
+                Wicomm Especialistas em E-commerce
+              </p>
+              <p class="section-experiencias-card-text">
+                Responsável por gerir contas de clientes e fazer a analise de
+                dados das mesmas, dando suporte técnico e sugerindo evoluções.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="section-contato" id="section-contato">
+          <h2>Como posso</h2>
+          <h2 class="verde">te ajudar?</h2>
+          <p>Estou à diposição para ajudar o seu projeto ou sua empresa.</p>
+          <div class="section-contato-item">
+            <img
+              class="section-contato-icone"
+              src="Icones/e-mail.png"
+              alt="E-mail icon"
+            />
+            <a href="malito: matheusmboaventura@gmail.com"
+              >matheusmboaventura@gmail.com</a
+            >
+          </div>
+          <div class="section-contato-item">
+            <img
+              class="section-contato-icone"
+              src="Icones/telefone.png"
+              alt="telefone icon"
+            />
+            <a href="tel:(48)99604-8201">(48)99604-8201</a>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <h2 class="titulo-navegacao">Matheus Boaventura</h2>
+        <div class="footer-social-icons-container">
+          <a onclick="onClickLink('https://github.com/Matheus-Boaventura')">
+            <img
+              alt="Github"
+              class="hero-info-icons-img"
+              src="icones/github.png"
+            />
+          </a>
+          <a
+            onclick="onClickLink('https://www.linkedin.com/in/matheus-boaventura-722504226/')"
+          >
+            <img
+              alt="Linkedin"
+              class="hero-info-icons-img"
+              src="icones/linkedin.png"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
