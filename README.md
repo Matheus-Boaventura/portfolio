@@ -1,2 +1,2 @@
 # portfolio
-Demosntrativo sobre a minha carreira, utilizando Html, CSS e JavaScript
+Demostrativo sobre a minha carreira, utilizando Html, CSS e JavaScript
