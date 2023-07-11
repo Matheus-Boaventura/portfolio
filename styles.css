@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #fefefe;
-  margin: auto;
-  padding: auto;
+  margin: 0px;
+  padding: 0px;
   overflow-x: hidden;
 }
 
@@ -30,17 +30,59 @@ h5 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 24px;
+  margin: 0px;
 }
 
-p.card {
-  font-size: 16px;
-  margin-top: 0px;
-  text-align: center;
-  max-width: 70%;
+li {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 500;
 }
 
 a {
   color: #1e1e1e;
+}
+
+button {
+  height: 56px;
+  border-radius: 16px;
+  background-color: #219653;
+  border-width: 0px;
+  color: #fefefe;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.16rem;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+}
+
+.config-button-portfolio{
+  display: flex;
+  align-items: center;
+  
+}
+
+.button-portfolio {
+  height: 30px;
+  border-radius: 16px;
+  background-color: #219653;
+  border-width: 0px;
+  color: #fefefe;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.16rem;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+p.card {
+  font-size: 16px;
+  margin-top: 8px;
+  text-align: center;
+  max-width: 70%;
 }
 
 footer {
@@ -52,20 +94,6 @@ footer {
   justify-content: center;
 }
 
-button {
-  height: 56px;
-  border-radius: 20px;
-  background-color: #219653;
-  border-width: 0px;
-  color: #fefefe;
-  font-size: 16px;
-  letter-spacing: 0.16rem;
-  font-weight: bold;
-  padding-left: 12px;
-  padding-right: 12px;
-  cursor: pointer;
-}
-
 .root-container {
   display: flex;
   flex-direction: column;
@@ -75,29 +103,30 @@ button {
 
 .content-container {
   display: flex;
-  width: 1316px;
+  flex-direction: column;
+  width: 1216px;
   align-items: center;
   justify-content: flex-start;
-  flex-direction: column;
 }
 
 .section-hero {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  display: flex;
-  width: 100vw;
-  height: 80vh;
+  width: 100%;
+  height: 90vh;
 }
 
 .barra-navegacao {
   display: flex;
   width: 1216px;
-  height: 72px;
-  margin-top: 64px;
+  height: 100px;
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
+  margin-top: 34px;
+  border-bottom: 3px solid #219653;
 }
 
 .titulo-navegacao {
@@ -111,37 +140,37 @@ button {
   color: #1e1e1e;
   font-size: 16px;
   letter-spacing: -0.015rem;
-  margin-right: 16px;
+  margin-right: 58px;
   cursor: pointer;
 }
 
 .hero-info {
   display: flex;
   flex-direction: row;
-  width: 1216px;
-  height: 594px;
   align-items: center;
   justify-content: space-between;
+  width: 1216px;
+  height: 594px;
   padding-top: 64px;
 }
 
 .hero-info-title {
-  font-size: 50px;
+  font-size: 48px;
   font-weight: bold;
   margin: 0px;
 }
 
 .hero-info-subtitle {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 28px;
-  max-width: 60%;
+  max-width: 62%;
   margin-top: 16px;
 }
 
 .hero-info-image {
-  height: 280px;
-  width: 280px;
-  border-radius: 80px;
+  height: 100%;
+  width: 250px;
+  border-radius: 40px;
   border-color: #219653;
   border-width: 4px;
   border-style: solid;
@@ -150,10 +179,10 @@ button {
 .hero-info-icons-container {
   display: flex;
   flex-direction: row;
-  width: 15%;
-  align-items: start;
+  width: 12%;
+  align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 24px;
 }
 
 .hero-info-icons-img {
@@ -162,7 +191,7 @@ button {
   cursor: pointer;
 }
 
-.section-ability {
+.section-abilities {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -175,12 +204,12 @@ button {
 .ability-cards-container {
   display: grid;
   width: 100%;
+  column-gap: 36px;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
   justify-content: center;
   align-content: center;
-  column-gap: 36px;
-  margin-top: 20px;
+  margin-top: 48px;
 }
 
 .ability-card {
@@ -190,10 +219,10 @@ button {
   width: 312px;
   height: 690px;
   border-width: 1px;
-  border-color: #219653;
+  border-color: #d9d9d9;
   border-radius: 12px;
   border-style: solid;
-  padding: 12px;
+  padding-top: 16px;
 }
 
 .ability-card-icon-container {
@@ -202,79 +231,79 @@ button {
   justify-content: center;
   width: 80px;
   height: 80px;
-  background-color: #219653;
   border-radius: 40px;
-  padding: 12px;
-  margin-bottom: 0px;
+  background-color: #219653;
+  margin-bottom: 12px;
 }
 
 .ability-card-icon-img {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
+}
+
+.ability-card-subtitle {
+  font-size: 16px;
+  margin-top: 8px;
+  text-align: center;
+  max-width: 70%;
 }
 
 .ability-list {
   width: 90%;
 }
 
-li {
-  font-size: 20px;
-  margin-bottom: 12px;
-  font-weight: bold;
-}
-
-.section-portifolio {
+.section-portfolio {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.section-portifolio-grid {
+.section-portfolio-grid {
   display: grid;
   width: 100%;
+  column-gap: 36px;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
   justify-content: center;
   align-content: center;
-  column-gap: 36px;
-  margin-top: 20px;
+  margin-top: 48px;
 }
 
-.section-portifolio-card {
+.section-portfolio-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   width: 384px;
-  height: 350px;
+  height: 300px;
   border-width: 2px;
-  border-color: #219653;
+  border-color: #d9d9d9;
   border-style: solid;
   border-radius: 24px;
 }
 
-.section-portifolio-img {
+.section-portfolio-img {
   width: 220px;
   height: 156px;
-  margin-bottom: 0px;
+  margin-bottom: 12px;
 }
 
-.section-portifolio-card-links {
+.section-portfolio-card-links {
   display: flex;
-  width: 20%;
   flex-direction: row;
+  width: 20%;
   align-items: baseline;
   justify-content: space-between;
 }
 
-.section-portifolio-card-icon-image {
+.section-portfolio-card-icon-image {
   width: 24px;
   height: 24px;
 }
 
-.section-experiencias {
+.section-experiences {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -284,26 +313,25 @@ li {
   width: 100%;
 }
 
-.section-experiencias-card {
+.section-experiences-card {
   display: flex;
-  width: 800px;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  width: 800px;
   background-color: #d9d9d9;
-  border: solid;
   border-radius: 16px;
   margin-top: 24px;
   padding: 24px;
 }
-.section-experiencias-card-img {
+
+.section-experiences-card-img {
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  padding: 24px;
 }
 
-.section-experiencias-card-text-container {
+.section-experiences-card-text-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -311,26 +339,26 @@ li {
   margin-left: 16px;
 }
 
-.section-experiencias-card-title {
+.section-experiences-card-title {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   margin: 0px;
 }
 
-.section-experiencias-card-subtitle {
+.section-experiences-card-subtitle {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
+  margin: 4px 0px 0px 0px;
+}
+
+.section-experiences-card-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
   margin: 6px 0px 0px 0px;
 }
 
-.section-experiencias-card-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  margin: 6px 0px 0px 0px;
-}
-
-.section-contato {
+.section-contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -340,7 +368,7 @@ li {
   width: 100%;
 }
 
-.section-contato-item {
+.section-contact-item {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -348,7 +376,7 @@ li {
   margin-bottom: 16px;
 }
 
-.section-contato-icone {
+.section-contact-item-icon {
   width: 24px;
   height: 24px;
   margin-right: 8px;
@@ -357,7 +385,7 @@ li {
 .footer-content {
   display: flex;
   flex-direction: row;
-  width: 1716px;
+  width: 1216px;
   height: 100%;
   align-items: center;
   justify-content: space-between;
@@ -368,5 +396,5 @@ li {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 50%;
+  width: 10%;
 }
